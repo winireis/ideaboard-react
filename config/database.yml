@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: development
+  password: development
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: ideaboard-react_development
+
+test:
+  <<: *default
+  database: ideaboard-react_test
+
+production:
+  <<: *default
+  database: ideaboard-react_production
+  username: ideaboard-react
+  password: <%= ENV['IDEABOARD-REACT_DATABASE_PASSWORD'] %>
