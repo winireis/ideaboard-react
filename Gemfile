@@ -10,8 +10,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', '~> 3.1.7'
+# Use Json Web Token (JWT) for token based authentication
+gem 'jwt'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -29,7 +30,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
 end
 
-# Some gems to help write tests easier
+# Some gems to write tests easier
 group :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
