@@ -25,8 +25,8 @@ class List extends Component {
               return <tr key={idea.id}>
                 <td class="col s8">{idea.title}</td>
                 <td class="col s4">
-                  <a class="btn blue">Edit</a>
-                  <a class="btn red" onClick={() => this.deleteIdea(idea)}>Delete</a>
+                  <button class="btn blue">Edit</button>
+                  <button class="btn red" onClick={() => this.deleteIdea(idea)}>Delete</button>
                 </td>
                </tr>;
              })}

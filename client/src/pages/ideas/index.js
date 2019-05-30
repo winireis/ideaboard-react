@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import List from "./list";
+import CreateIdea from './create';
 import api from "../../services/api";
 
 class Ideas extends Component{
@@ -34,9 +35,8 @@ class Ideas extends Component{
       <div>
         <h2>Ideas</h2>
         <List loadIdeas={this.loadIdeas} ideas={this.state.ideas}/>
+        <CreateIdea loadIdeas={this.loadIdeas}/>
       </div>
-
-
     );
   }
 }
