@@ -19,7 +19,7 @@ class LogIn extends Component {
       try {
         const response = await api.post("/login", { username, password });
         login(response.data.token);
-        this.props.history.push("/app");
+        this.props.history.push("/ideas");
       } catch (err) {
         this.setState({
           error:
