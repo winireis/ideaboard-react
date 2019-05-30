@@ -39,7 +39,7 @@ class SignUp extends Component {
           <label>Password Confirmation</label>
           <input type="password" onChange={e => this.setState({ password_confirmation: e.target.value })}
           />
-          <button type="submit" onClick={this.handleSignUp}>Signup</button>
+          <button type="submit">Signup</button>
           <hr />
           <Link to="/">Login</Link>
         </form>
