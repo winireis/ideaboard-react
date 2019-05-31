@@ -1,5 +1,9 @@
 # Ideaboard
 
+## Notas do Desenvolvedor
+- API 100% funcional
+- Front-end React com comportamento errático não diagnosticável no modal de criação de nova ideia.
+
 ## API routes
 
 ### POST /api/signup
