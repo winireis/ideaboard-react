@@ -3,7 +3,6 @@ import api from "../../services/api";
 import M from "materialize-css";
 
 function CreateIdea(props) {
-
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const handleSubmit = (async () => {
@@ -18,8 +17,8 @@ function CreateIdea(props) {
   }, []);
   return (
     <div>
-      <button data-target="modal1" class="btn modal-trigger">New Idea</button>
-      <div id="modal1" class="modal">
+      <button data-target="modalCreate" class="btn modal-trigger">New Idea</button>
+      <div id="modalCreate" class="modal">
         <div class="modal-content">
           <h4>New Idea</h4>
           <form onSubmit={handleSubmit}>
