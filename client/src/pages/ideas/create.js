@@ -9,7 +9,6 @@ function CreateIdea(props) {
     await api.post("/ideas", { title, description });
     setTitle('')
     setDescription('')
-    props.loadIdeas();
   });
 
   useEffect(() => {

@@ -32,6 +32,7 @@ class LogIn extends Component {
   render() {
     return (
       <div class="container">
+        <h1>Login</h1>
         <form onSubmit={this.handleSignIn}>
           {this.state.error && <p>{this.state.error}</p>}
           <label>Username</label>
@@ -39,8 +40,6 @@ class LogIn extends Component {
           <label>Password</label>
           <input type="password" onChange={e => this.setState({ password: e.target.value })} />
           <button type="submit">Login</button>
-          <hr />
-          <Link to="/">Login</Link>
         </form>
       </div>
     );
